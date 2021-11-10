@@ -1,0 +1,14 @@
+
+
+<!-- views/players.hbs -->
+
+<div class="container">
+  <h1>Players</h1>
+  <div class="row">
+  {{#each players}}  {{!--por cada jugador en el array de jugador una carta  --}}
+        {{> playerCards this}} {{!--this para que acceda a la info de cada item del array --}}
+      {{/each}}
+  </div>
+</div>
+
+ 
